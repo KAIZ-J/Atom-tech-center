@@ -172,10 +172,11 @@ html {
   width: 100%;
   
 }
-body{
+html, body {
+  max-width: 100%;
   overflow-x: hidden;
-    overflow-y: auto;
 }
+
 
  /* Contacts section  */
 .Contacts textarea {

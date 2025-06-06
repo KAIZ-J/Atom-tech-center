@@ -11,7 +11,7 @@ body {
 a {
   text-decoration: none;
 }
-
+ /* styling the navigation bar */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +59,7 @@ a {
 }
 .search-btn button img {
   width: 30px;
+  margin-left: -50px;
 }
 .note {
   display: flex;
@@ -96,6 +97,8 @@ a {
   font-family: Audiowide;
   font-size: 1.8rem;
 }
+
+/* products section  */
 .products {
   display: flex;
   justify-content: center;
@@ -129,6 +132,8 @@ a {
   transform: translateY(-5px);
   box-shadow: 0px 0px 10px rgb(236, 39, 39);
 }
+
+/* about section  */
 .about h2 {
   font-family: audiowide;
   text-align: center;
@@ -157,7 +162,7 @@ a {
 hr {
   width: 500px;
 }
-
+/* scrolling  */
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -167,6 +172,7 @@ html {
   scroll-snap-align: start;
   
 }
+ /* Contacts section  */
 .Contacts textarea {
   resize: vertical;
   max-height: 100px;
@@ -223,6 +229,12 @@ align-items: center;
   margin-bottom: 100px;
 }
 
+
+
+
+
+
+/* responsive section */
 @media (max-width:768px){
   .nav-links{
     display: none;

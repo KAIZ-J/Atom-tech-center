@@ -230,4 +230,11 @@ align-items: center;
   .hero h5 {
   font-size: 0.6rem;
 }
+.products .cards-product {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
 }

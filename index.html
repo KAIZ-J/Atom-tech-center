@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="search-btn">
-        <button>
+        <button  onclick="srh()" type="button">
           <img
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2YyZWVlZSIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMjkuNjYsMjE4LjM0bC01MC4wNy01MC4wNmE4OC4xMSw4OC4xMSwwLDEsMC0xMS4zMSwxMS4zMWw1MC4wNiw1MC4wN2E4LDgsMCwwLDAsMTEuMzItMTEuMzJaTTQwLDExMmE3Miw3MiwwLDEsMSw3Miw3MkE3Mi4wOCw3Mi4wOCwwLDAsMSw0MCwxMTJaIj48L3BhdGg+PC9zdmc+"
             alt=""
@@ -43,8 +43,12 @@
           />
         </button>
       </div>
-    </nav>
-    
+    </nav> 
+    <div id="dropdown-search"> <br><br><br><br>
+  <div><input type="text" required placeholder="what product do you want"></div>
+ <div> <button>Search</button></div>
+</div>
+
     <div class="section hero" id="hero"> <br>
       <div class="note"> <br>
         <h1> <br> <br> <br>
@@ -196,5 +200,16 @@
 
      <div class="footer">Copyright &copy 2025; Made By Atom Tech Center </div> 
 
+     <script>
+      function srh(){
+        const serch = document.getElementById("dropdown-search");
+        if(serch.style.display=="none"){
+          serch.style.display="flex";
+        }
+        else {
+          serch.style.display="none"
+        }
+      }
+     </script>
   </body>
 </html>

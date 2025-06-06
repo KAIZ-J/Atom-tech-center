@@ -260,7 +260,12 @@ align-items: center;
     width: 500px;
   }
 }
-
+#dropdown-search{
+  position: absolute;
+ align-items: flex-end;
+  display: none;
+margin-left: 1000px;
+}
 /* responsive section */
 @media (max-width:768px){
   .nav-links{
@@ -303,5 +308,9 @@ animation: line 10s infinite alternate;}
 }
 .navbar{
   position: absolute;
+}
+#dropdown-search{
+
+margin-left: 220px;
 }
 }

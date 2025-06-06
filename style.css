@@ -1,0 +1,224 @@
+* {
+  font-family: inter;
+}
+body {
+  margin: 0;
+
+  background-color: #282828;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -30px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 75px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 10px 15px;
+  color: #5e5e5e;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.search-btn button {
+  background: #282828;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-family: "Sour Gummy", sans-serif;
+  cursor: pointer;
+}
+.search-btn button img {
+  width: 30px;
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero button {
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 150px;
+}
+.hero button:hover {
+  background-color: red;
+  color: antiquewhite;
+}
+.hero img {
+  width: 550px;
+  height: 400px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 300px;
+ 
+}
+.hero h5 {
+  color: #5e5e5e;
+}
+.hero h1,
+.hero span {
+  font-family: Audiowide;
+  font-size: 1.8rem;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.products .card {
+  width: 200px;
+  height: 200px;
+  border: none;
+  background-color: rgb(249, 33, 33);
+  border-radius: 20px;
+  transition: 0.2s ease;
+  color: white;
+}
+.products .cards-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.products h2 {
+  font-family: Audiowide;
+}
+
+.products .cards-product img {
+  width: 100px;
+}
+
+.products .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px rgb(236, 39, 39);
+}
+.about h2 {
+  font-family: audiowide;
+  text-align: center;
+}
+
+.about p {
+  max-width: 900px;
+  text-align: justify;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+}
+.about h2 span {
+  color: red;
+  font-family: audiowide;
+}
+.about p span {
+  color: red;
+}
+
+hr {
+  width: 500px;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  
+}
+.section {
+  scroll-snap-align: start;
+  
+}
+.Contacts textarea {
+  resize: vertical;
+  max-height: 100px;
+}
+
+.contain-forms {
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
+  justify-content: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.Contacts h2,
+h5 {
+  text-align: center;
+}
+.Contacts a {
+  color: white;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.Contacts a:hover {
+  color: red;
+}
+
+.Contacts input {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+
+.Contacts button {
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 80px;
+}
+.Contacts button:hover {
+  background-color: red;
+  color: antiquewhite;
+}
+
+.footer {
+  padding: 10px;
+  
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Contacts{
+  margin-bottom: 100px;
+}

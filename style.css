@@ -222,3 +222,12 @@ align-items: center;
 .Contacts{
   margin-bottom: 100px;
 }
+
+@media (max-width:768px){
+  .nav-links{
+    display: none;
+  }
+  .hero h5 {
+  font-size: 0.6rem;
+}
+}

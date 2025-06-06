@@ -247,6 +247,23 @@ align-items: center;
 }
 hr{width: 200px;}
 .contain-forms {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+html {
+  scroll-snap-type: none;
+  scroll-behavior: smooth;
   
-  gap: 40px;}
+}
+.section {
+  scroll-snap-align: none;
+  
+}
+.footer{
+  background-color: #383838;
+}
 }

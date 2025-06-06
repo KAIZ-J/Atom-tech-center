@@ -163,7 +163,8 @@ a {
 }
 
 hr {
-  width: 500px;
+  width: 0;
+  animation: line2 10s infinite alternate;
 }
 /* scrolling  */
 html {
@@ -240,8 +241,24 @@ align-items: center;
   transform: rotateY(-20deg) rotateX(-10deg)
 }
 }
+  
+@keyframes line {
+  0%{
+    width: 0;
+  }
+   100%{
+    width: 240px;
+  }
+}
 
-
+@keyframes line2 {
+  0%{
+    width: 0;
+  }
+   100%{
+    width: 500px;
+  }
+}
 
 /* responsive section */
 @media (max-width:768px){
@@ -266,7 +283,8 @@ align-items: center;
  text-align: center;
   font-size: 0.7rem;
 }
-hr{width: 200px;}
+hr{width: 0;
+animation: line 10s infinite alternate;}
 .contain-forms {
   display: flex;
   gap: 50px;

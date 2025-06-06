@@ -246,4 +246,7 @@ align-items: center;
   font-size: 0.7rem;
 }
 hr{width: 200px;}
+.contain-forms {
+  
+  gap: 40px;}
 }

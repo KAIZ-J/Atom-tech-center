@@ -172,7 +172,10 @@ html {
   width: 100%;
   
 }
-
+body{
+  overflow-x: hidden;
+    overflow-y: auto;
+}
 
  /* Contacts section  */
 .Contacts textarea {
@@ -225,6 +228,7 @@ text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: #353535;
 
 }
 .Contacts{
@@ -311,9 +315,5 @@ animation: line 10s infinite alternate;}
 }
 .navbar{
   position: absolute;
-}
-#dropdown-search{
-
-justify-content: right;
 }
 }

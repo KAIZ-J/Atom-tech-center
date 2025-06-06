@@ -104,6 +104,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
 }
 .products .card {
   width: 200px;
@@ -126,6 +127,8 @@ a {
 
 .products .cards-product img {
   width: 100px;
+  animation: rotation3d 5s infinite alternate;
+  transition: tranform 5s ease-in-out;
 }
 
 .products .card:hover {
@@ -164,14 +167,11 @@ hr {
 }
 /* scrolling  */
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   
 }
-.section {
-  scroll-snap-align: start;
-  
-}
+
+
  /* Contacts section  */
 .Contacts textarea {
   resize: vertical;
@@ -219,7 +219,6 @@ h5 {
 
 .footer {
   padding: 10px;
-  
 text-align: center;
 display: flex;
 justify-content: center;
@@ -229,8 +228,18 @@ align-items: center;
   margin-bottom: 100px;
 }
 
-
-
+ /* trying to add 3d effects for some images  */
+@keyframes rotation3d {
+0%{
+  transform: rotateY(0deg) rotateX(0deg);
+}
+50%{
+  transform: rotateY(180deg) rotateX(10deg)
+}
+100%{
+  transform: rotateY(-20deg) rotateX(-10deg)
+}
+}
 
 
 
@@ -253,8 +262,8 @@ align-items: center;
   height: 250px;
 }
 .about p {
-  max-width: 300px;
-  text-align: justify;
+  max-width: 320px;
+ text-align: center;
   font-size: 0.7rem;
 }
 hr{width: 200px;}
@@ -266,15 +275,8 @@ hr{width: 200px;}
   white-space: nowrap;
   flex-direction: column;
 }
-html {
-  scroll-snap-type: none;
-  scroll-behavior: smooth;
-  
-}
-.section {
-  scroll-snap-align: none;
-  
-}
+
+
 .footer{
   background-color: #383838;
 }

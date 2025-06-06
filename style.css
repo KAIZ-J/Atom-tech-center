@@ -236,5 +236,14 @@ align-items: center;
   gap: 20px;
   text-align: center;
 }
-
+.hero img {
+  width: 400px;
+  height: 250px;
+}
+.about p {
+  max-width: 300px;
+  text-align: justify;
+  font-size: 0.7rem;
+}
+hr{width: 200px;}
 }

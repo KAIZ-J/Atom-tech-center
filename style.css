@@ -264,7 +264,9 @@ align-items: center;
   position: absolute;
  align-items: flex-end;
   display: none;
-margin-left: 1000px;
+width: 100%;
+justify-content: right;
+gap: 1px;
 }
 /* responsive section */
 @media (max-width:768px){
@@ -311,6 +313,6 @@ animation: line 10s infinite alternate;}
 }
 #dropdown-search{
 
-margin-left: 220px;
+justify-content: right;
 }
 }

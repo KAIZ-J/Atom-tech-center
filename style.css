@@ -224,6 +224,7 @@ text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
+width: 100%;
 }
 .Contacts{
   margin-bottom: 100px;
@@ -296,7 +297,8 @@ animation: line 10s infinite alternate;}
 
 
 .footer{
-  background-color: #383838;
+  background-color: #353535;
+  font-size: 0.8rem;
 }
 .navbar{
   position: absolute;

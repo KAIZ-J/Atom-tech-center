@@ -298,4 +298,7 @@ animation: line 10s infinite alternate;}
 .footer{
   background-color: #383838;
 }
+.navbar{
+  position: absolute;
+}
 }

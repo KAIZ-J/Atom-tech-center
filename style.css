@@ -322,5 +322,10 @@ h5 {
   .navbar {
     position: absolute;
   }
-  
+  .hero h1,
+.hero span {
+ 
+  font-size: 1.5rem;
+}
+
 }

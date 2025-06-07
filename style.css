@@ -11,7 +11,7 @@ body {
 a {
   text-decoration: none;
 }
- /* styling the navigation bar */
+/* styling the navigation bar */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +87,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 300px;
- 
 }
 .hero h5 {
   color: #5e5e5e;
@@ -104,7 +103,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
 }
 .products .card {
   width: 200px;
@@ -170,15 +168,14 @@ hr {
 html {
   scroll-behavior: smooth;
   width: 100%;
-  
 }
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-
- /* Contacts section  */
+/* Contacts section  */
 .Contacts textarea {
   resize: vertical;
   max-height: 100px;
@@ -225,96 +222,96 @@ h5 {
 
 .footer {
   padding: 10px;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #353535;
-
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
 }
-.Contacts{
+.Contacts {
   margin-bottom: 100px;
 }
 
- /* trying to add 3d effects for some images  */
+/* trying to add 3d effects for some images  */
 @keyframes rotation3d {
-0%{
-  transform: rotateY(0deg) rotateX(0deg);
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateX(10deg);
+  }
+  100% {
+    transform: rotateY(-20deg) rotateX(-10deg);
+  }
 }
-50%{
-  transform: rotateY(180deg) rotateX(10deg)
-}
-100%{
-  transform: rotateY(-20deg) rotateX(-10deg)
-}
-}
-  
+
 @keyframes line {
-  0%{
+  0% {
     width: 0;
   }
-   100%{
+  100% {
     width: 240px;
   }
 }
 
 @keyframes line2 {
-  0%{
+  0% {
     width: 0;
   }
-   100%{
+  100% {
     width: 500px;
   }
 }
-#dropdown-search{
+#dropdown-search {
   position: absolute;
- align-items: flex-end;
+  align-items: flex-end;
   display: none;
-width: 100%;
-justify-content: right;
-gap: 1px;
+
+  justify-content: right;
+  gap: 1px;
 }
 /* responsive section */
-@media (max-width:768px){
-  .nav-links{
+@media (max-width: 768px) {
+  .nav-links {
     display: none;
   }
   .hero h5 {
-  font-size: 0.6rem;
-}
-.products .cards-product {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  text-align: center;
-}
-.hero img {
-  width: 400px;
-  height: 250px;
-}
-.about p {
-  max-width: 320px;
- text-align: center;
-  font-size: 0.7rem;
-}
-hr{width: 0;
-animation: line 10s infinite alternate;}
-.contain-forms {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  flex-direction: column;
-}
+    font-size: 0.6rem;
+  }
+  .products .cards-product {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+  .hero img {
+    width: 400px;
+    height: 250px;
+  }
+  .about p {
+    max-width: 320px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  hr {
+    width: 0;
+    animation: line 10s infinite alternate;
+  }
+  .contain-forms {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-direction: column;
+  }
 
-
-.footer{
-  background-color: #353535;
-  font-size: 0.8rem;
-  width: 100%;
-}
-.navbar{
-  position: absolute;
-}
+  .footer {
+    background-color: #353535;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .navbar {
+    position: absolute;
+  }
 }

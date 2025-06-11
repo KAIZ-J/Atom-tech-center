@@ -91,7 +91,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 .hero h5 {
   color: #5e5e5e;
@@ -155,7 +155,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 .about h2 span {
   color: red;
@@ -280,6 +280,12 @@ h5 {
   }
 /* responsive section */
 @media (max-width: 768px) {
+  
+  #top{
+    position: fixed;
+    bottom: 2rem;
+    margin-left: 350px;
+  }
   .nav-links {
     display: none;
   }

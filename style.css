@@ -50,7 +50,7 @@ a {
 }
 
 .search-btn button {
-  background: #282828;
+  background: none;
   color: black;
   border: none;
   border-radius: 10px;

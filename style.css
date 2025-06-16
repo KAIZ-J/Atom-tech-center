@@ -55,7 +55,6 @@ a {
   border: none;
   border-radius: 10px;
   padding: 5px 15px;
-  font-family: "Sour Gummy", sans-serif;
   cursor: pointer;
 }
 .search-btn button:hover{
@@ -77,10 +76,13 @@ a {
   border: none;
   height: 30px;
   width: 150px;
+  animation: browse 1s infinite alternate;
+  transition: transform 5s ease-in-out;
 }
 .hero button:hover {
   background-color: red;
   color: antiquewhite;
+  
 }
 .hero img {
   width: 550px;
@@ -267,6 +269,15 @@ h5 {
     width: 500px;
   }
 }
+@keyframes browse {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 #dropdown-search {
   position: absolute;
   align-items: flex-end;
@@ -280,7 +291,9 @@ h5 {
   }
 /* responsive section */
 @media (max-width: 768px) {
-  
+  .hero h5{
+    font-size: 1rem;
+  }
   #top{
     position: fixed;
     bottom: 2rem;
@@ -303,7 +316,7 @@ h5 {
   .about p {
     max-width: 320px;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   hr {
     width: 0;
@@ -321,11 +334,9 @@ h5 {
   .footer {
     background-color: #353535;
     font-size: 0.8rem;
-    width: 100%;
+  
   }
-  .navbar {
-    position: absolute;
-  }
+  
  
 
 }

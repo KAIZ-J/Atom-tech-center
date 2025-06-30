@@ -16,13 +16,13 @@
       href="https://fonts.googleapis.com/css?family=Audiowide|Roboto|Inter"
     />
     <link rel="stylesheet" href="style.css" />
-   <link rel="shortcut icon" href="/assets/Circle_Monogram_Logo_-removebg-preview.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <nav class="navbar">
       <div class="logo">
         <img
-          src="/assets/F086mEe9RcCigX2eYdevgA-removebg-preview.png"
+          src="/assets/910ad796-17fc-457a-8f22-7d9af46c303f-removebg-preview.png"
           alt="logo"
         />
       </div>
@@ -35,12 +35,27 @@
         </div>
       </div>
       <div class="search-btn">
-        <button onclick="changeclr()">
-          <i class="fa-solid fa-circle-half-stroke fa-xl" id="modecolor"></i>
+        <button onclick="srh()" type="button">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2YyZWVlZSIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMjkuNjYsMjE4LjM0bC01MC4wNy01MC4wNmE4OC4xMSw4OC4xMSwwLDEsMC0xMS4zMSwxMS4zMWw1MC4wNiw1MC4wN2E4LDgsMCwwLDAsMTEuMzItMTEuMzJaTTQwLDExMmE3Miw3MiwwLDEsMSw3Miw3MkE3Mi4wOCw3Mi4wOCwwLDAsMSw0MCwxMTJaIj48L3BhdGg+PC9zdmc+"
+            alt=""
+          />
+        </button>
+        <button>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2ZiZjlmOSIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xMjgsMjRBMTA0LDEwNCwwLDEsMCwyMzIsMTI4LDEwNC4xMSwxMDQuMTEsMCwwLDAsMTI4LDI0Wk03NC4wOCwxOTcuNWE2NCw2NCwwLDAsMSwxMDcuODQsMCw4Ny44Myw4Ny44MywwLDAsMS0xMDcuODQsMFpNOTYsMTIwYTMyLDMyLDAsMSwxLDMyLDMyQTMyLDMyLDAsMCwxLDk2LDEyMFptOTcuNzYsNjYuNDFhNzkuNjYsNzkuNjYsMCwwLDAtMzYuMDYtMjguNzUsNDgsNDgsMCwxLDAtNTkuNCwwLDc5LjY2LDc5LjY2LDAsMCwwLTM2LjA2LDI4Ljc1LDg4LDg4LDAsMSwxLDEzMS41MiwwWiI+PC9wYXRoPjwvc3ZnPg=="
+            alt=""
+          />
         </button>
       </div>
     </nav>
-
+    <div id="dropdown-search">
+      <br /><br /><br /><br>
+      <div>
+        <input type="text" required placeholder="what product do you want" />
+      </div>
+      <div><button>Search</button></div>
+    </div>
 
     <div class="section hero" id="hero">
       <br />
@@ -50,22 +65,21 @@
           <br />
           <br />
           <br />
-          <span>Tech </span> You Love.
-          <span>Prices </span> You’ll Love More.
+          <span style="color: red">Tech </span> You Love.
+          <span style="color: red">Prices </span> You’ll Love More.
         </h1>
         <h5>
           From phones to gaming gear, we’ve got the best gadgets—no wallet
           pain.
         </h5>
-        <p>Start Shopping, <span>Now! </span></p>
-        <a href="#products"><button id="Browse">Browse gadgets</button></a>
+        <p>Start Shopping, <span style="color: red">Now! </span></p>
+        <a href="#products"><button>Browse gadgets</button></a>
       </div>
       <div class="hero-pic">
         <br /><br /><br />
         <img
           src="/assets/2fde56aa-4bbc-4a01-a85b-c8bf4242f22e-removebg-preview.png"
           alt=""
-          id="pro"
         />
       </div>
     </div>
@@ -150,11 +164,11 @@
       <br />
       <br />
       <br />
-      <h2>About<span style="color: #284f5c;"> Atom Tech Center </span></h2>
+      <h2>About<span> Atom Tech Center </span></h2>
       <hr />
       <p>
         At Atom Tech Center, we’re passionate about connecting people with
-        powerful, reliable, and innovative tech. 
+        powerful, reliable, and innovative tech. <br />
         From phones and gadgets to must-have accessories, we bring the future to
         your fingertips — fast, affordable, and hassle-free. We believe in more
         than just selling tech — we help you experience it. Whether you're
@@ -162,13 +176,12 @@
         is your trusted go-to.
       </p>
       <p>
-        <span style="color: #284f5c;">Power up with Atom </span>— simple, smart, and always in stock.
+        <span>Power up with Atom </span>— simple, smart, and always in stock.
       </p>
       <hr />
     </div>
 
     <div class="section Contacts" id="contact">
-        <br> <br>
       <h2>Get In Touch</h2>
       <h5>Questions? Orders? We’re here for you.</h5>
       <div class="contain-forms">
@@ -201,7 +214,7 @@
             <label for="message">Messsage:</label> <br />
             <textarea name="message" id="message" rows="1"></textarea> <br />
 
-            <button type="submit" id="sub">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <div>
@@ -219,33 +232,13 @@
    
   </body>
    <script>
-      function changeclr() {
-         const imgpr = document.getElementById("pro");
-        const modecolor = document.getElementById("modecolor");
-    const browse = document.getElementById("Browse");
-    const body = document.body;
-    const cards = document.querySelectorAll('.card');
-    const subc = document.getElementById("sub");
-    const fooot = document.querySelector(".footer");
-    if (body.style.backgroundColor === "rgb(242, 246, 248)" || 
-        getComputedStyle(body).backgroundColor === "rgb(242, 246, 248)") {
-        browse.style.backgroundColor = "#286276";
-        subc.style.backgroundColor = "#286276";
-        body.style.backgroundColor = "#070b0d";
-        body.style.color = "#edf1f2";
-        cards.forEach(card => card.style.backgroundColor = '#286276');
-        modecolor.style.color="white";
-        fooot.style.backgroundColor="#286276";
-    }
-    else {
-        subc.style.backgroundColor = "";
-        body.style.backgroundColor = "#f2f6f8";
-        body.style.color = ""; 
-        browse.style.backgroundColor = ""; 
-        cards.forEach(card => card.style.backgroundColor = ''); 
-        modecolor.style.color="";
-        fooot.style.backgroundColor="#286276";
-    }
-}
+      function srh() {
+        const serch = document.getElementById("dropdown-search");
+        if (serch.style.display == "none") {
+          serch.style.display = "flex";
+        } else {
+          serch.style.display = "none";
+        }
+      }
     </script>
 </html>

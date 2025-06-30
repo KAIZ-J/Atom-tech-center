@@ -3,9 +3,9 @@
 }
 body {
   margin: 0;
-  background-color:#f2f6f8;
-  color: #0d1112;
-  transition: background-color 0.3s ease, color 0.3s ease;
+
+  background-color: #282828;
+  color: white;
 }
 
 a {
@@ -22,19 +22,14 @@ a {
   padding: 10px;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(10px);
   height: 75px;
-  z-index: 99999;
 }
-.navbar i {
-    width: 20px;
-    padding: 15px;
-}
+
 .logo img {
   width: 100px;
   height: 100px;
-  padding: 5px;
 }
 
 .nav-links {
@@ -45,13 +40,13 @@ a {
 
 .nav-links a {
   padding: 10px 15px;
-  color: #284f5c;
+  color: #5e5e5e;
   border-radius: 8px;
   transition: background 0.3s;
 }
 
 .nav-links a:hover {
-  color: #32a2c8;
+  color: red;
 }
 
 .search-btn button {
@@ -64,8 +59,12 @@ a {
 }
 .search-btn button:hover{
   color: none;
+  background-color: #5e5e5e00;
 }
-
+.search-btn button img {
+  width: 30px;
+  margin-left: -50px;
+}
 .note {
   display: flex;
   flex-direction: column;
@@ -79,19 +78,15 @@ a {
   width: 150px;
   animation: browse 1s infinite alternate;
   transition: transform 5s ease-in-out;
-  background-color: #89c3d7;
 }
 .hero button:hover {
-  background-color: #32a2c8;
+  background-color: red;
   color: antiquewhite;
   
 }
 .hero img {
   width: 550px;
   height: 400px;
-}
-.hero span{
-color:#284f5c;
 }
 .hero {
   display: flex;
@@ -101,7 +96,7 @@ color:#284f5c;
   margin-bottom: 100px;
 }
 .hero h5 {
-  color: #89c3d7;
+  color: #5e5e5e;
 }
 .hero h1,
 .hero span {
@@ -120,11 +115,10 @@ color:#284f5c;
   width: 200px;
   height: 200px;
   border: none;
-  background-color: #89c3d7;
+  background-color: rgb(249, 33, 33);
   border-radius: 20px;
-  transition: transform 0.2s ease , background-color 0.3s ease;;
+  transition: 0.2s ease;
   color: white;
- 
 }
 .products .cards-product {
   display: grid;
@@ -144,7 +138,7 @@ color:#284f5c;
 
 .products .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 0px 10px #32a2c8;
+  box-shadow: 0px 0px 10px rgb(236, 39, 39);
 }
 
 /* about section  */
@@ -154,7 +148,7 @@ color:#284f5c;
 }
 
 .about p {
-  max-width: 650px;
+  max-width: 900px;
   text-align: justify;
 }
 
@@ -166,14 +160,16 @@ color:#284f5c;
   margin-bottom: 100px;
 }
 .about h2 span {
+  color: red;
   font-family: audiowide;
 }
-
+.about p span {
+  color: red;
+}
 
 hr {
   width: 0;
   animation: line2 10s infinite alternate;
-  background-color: #0d7da2;
 }
 /* scrolling  */
 html {
@@ -206,12 +202,12 @@ h5 {
   text-align: center;
 }
 .Contacts a {
-  color: #89c3d7;
+  color: white;
   transition: color 0.3s;
   cursor: pointer;
 }
 .Contacts a:hover {
-  color: #32a2c8;
+  color: red;
 }
 
 .Contacts input {
@@ -225,10 +221,9 @@ h5 {
   border: none;
   height: 30px;
   width: 80px;
-  background-color: #89c3d7;
 }
 .Contacts button:hover {
-  background-color: #32a2c8;
+  background-color: red;
   color: antiquewhite;
 }
 
@@ -238,8 +233,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #89c3d7;
-  font-family: inter;
+  background-color: #353535;
 }
 .Contacts {
   margin-bottom: 100px;
@@ -338,6 +332,7 @@ h5 {
   }
 
   .footer {
+    background-color: #353535;
     font-size: 0.8rem;
   
   }

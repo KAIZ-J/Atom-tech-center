@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPhones</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+       #phones-container img{
+            border-radius:20px;
+            display: inline;
+        }
+       .card .price{
+        align-self: flex-end;
+        margin-right: 4px;
+            color: blue;
+            background-color: aqua;
+            width: 50px;
+            margin-top: -90px;
+            border: 2px solid;
+            border-radius: 5px;
+        }
+        .card .name{
+        align-self: flex-end;
+        margin-right: 4px;
+            color: blue;
+            background-color: aqua;
+            border: 2px solid;
+            border-radius: 5px;
+            margin-top: -100px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="phones-container">
+  
+    </div>
+    <script src="script.js"></script> 
+    <script>
+        function capitalize(str){
+           let array = str.split("")
+           array[0]=array[0].toUpperCase()
+       return array.join("");
+        }
+        const phones = [
+  // ——— Apple ———
+  { id: 1, model: "iPhone 14", name: "Apple iPhone 14", category: "midrange", price: 599, storage: "128/256 GB", ram: "6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg" },
+  { id: 2, model: "iPhone 14 Plus", name: "Apple iPhone 14 Plus", category: "midrange", price: 699, storage: "128/256 GB", ram: "6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-plus.jpg" },
+  { id: 3, model: "iPhone 14 Pro", name: "Apple iPhone 14 Pro", category: "premium", price: 999, storage: "128/256/512 GB/1 TB", ram: "6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg" },
+  { id: 5, model: "iPhone 13", name: "Apple iPhone 13", category: "midrange", price: 549, storage: "128/256/512 GB", ram: "4 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg" },
+  { id: 6, model: "iPhone 13 mini", name: "Apple iPhone 13 mini", category: "budget", price: 499, storage: "128/256/512 GB", ram: "4 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg" },
+  { id: 7, model: "iPhone 13 Pro", name: "Apple iPhone 13 Pro", category: "premium", price: 899, storage: "128/256/512 GB/1 TB", ram: "6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg" },
+  { id: 8, model: "iPhone 13 Pro Max", name: "Apple iPhone 13 Pro Max", category: "premium", price: 999, storage: "128/256/512 GB/1 TB", ram: "6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" },
+  { id: 9, model: "iPhone 12", name: "Apple iPhone 12", category: "budget", price: 449, storage: "64/128/256 GB", ram: "4 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg" },
+  { id: 10, model: "iPhone 12 Pro Max", name: "Apple iPhone 12 Pro Max", category: "premium", price: 899, storage: "128/256/512 GB", ram: "6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg" },
+  { id: 11, model: "iPhone SE (2022)", name: "Apple iPhone SE (2022)", category: "budget", price: 429, storage: "64/128/256 GB", ram: "4 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2022.jpg" },
+
+  // ——— Samsung ———
+  { id: 12, model: "Galaxy S23", name: "Samsung Galaxy S23", category: "premium", price: 699, storage: "128/256 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-5g.jpg" },
+  { id: 13, model: "Galaxy S23+", name: "Samsung Galaxy S23+", category: "premium", price: 899, storage: "256/512 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-plus-5g.jpg" },
+  { id: 14, model: "Galaxy S23 Ultra", name: "Samsung Galaxy S23 Ultra", category: "premium", price: 1199, storage: "256/512 GB/1 TB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg" },
+  { id: 15, model: "Galaxy S22", name: "Samsung Galaxy S22", category: "midrange", price: 599, storage: "128/256 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg" },
+  { id: 16, model: "Galaxy S22 Ultra", name: "Samsung Galaxy S22 Ultra", category: "premium", price: 999, storage: "128/256/512 GB/1 TB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg" },
+  { id: 17, model: "Galaxy Z Flip4", name: "Samsung Galaxy Z Flip4", category: "premium", price: 899, storage: "128/256/512 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip4-5g.jpg" },
+  { id: 18, model: "Galaxy Z Fold4", name: "Samsung Galaxy Z Fold4", category: "premium", price: 1499, storage: "256/512 GB/1 TB", ram: "12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold4-5g.jpg" },
+  { id: 21, model: "Galaxy A14 5G", name: "Samsung Galaxy A14 5G", category: "budget", price: 199, storage: "64/128 GB", ram: "4/6 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a14-5g.jpg" },
+  { id: 22, model: "Galaxy Note20 Ultra", name: "Samsung Galaxy Note20 Ultra", category: "premium", price: 899, storage: "128/256/512 GB", ram: "12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-ultra-.jpg" },
+
+  // ——— Google ———
+  { id: 24, model: "Pixel 8", name: "Google Pixel 8", category: "midrange", price: 699, storage: "128/256 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8.jpg" },
+  { id: 25, model: "Pixel 8 Pro", name: "Google Pixel 8 Pro", category: "premium", price: 999, storage: "128/256/512 GB/1 TB", ram: "12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8-pro.jpg" },
+  { id: 26, model: "Pixel 7", name: "Google Pixel 7", category: "midrange", price: 599, storage: "128/256 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7.jpg" },
+  { id: 27, model: "Pixel 7 Pro", name: "Google Pixel 7 Pro", category: "premium", price: 899, storage: "128/256/512 GB", ram: "12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7-pro-new.jpg" },
+  { id: 28, model: "Pixel 7a", name: "Google Pixel 7a", category: "budget", price: 499, storage: "128 GB", ram: "8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-7a-r.jpg" },
+
+  // ——— OnePlus ———
+  { id: 32, model: "OnePlus 12", name: "OnePlus 12", category: "premium", price: 799, storage: "256/512 GB/1 TB", ram: "12/16 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg" },
+  { id: 33, model: "OnePlus 11", name: "OnePlus 11", category: "midrange", price: 699, storage: "128/256/512 GB", ram: "8/16 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg" },
+  { id: 34, model: "OnePlus 10 Pro", name: "OnePlus 10 Pro", category: "premium", price: 699, storage: "128/256/512 GB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10-pro.jpg" },
+  { id: 35, model: "OnePlus Nord 2 5G", name: "OnePlus Nord 2 5G", category: "midrange", price: 399, storage: "128/256 GB", ram: "6/8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-2-5g.jpg" },
+
+  // ——— Xiaomi / Poco / Redmi ———
+  { id: 37, model: "Xiaomi 13 Ultra", name: "Xiaomi 13 Ultra", category: "premium", price: 1199, storage: "256/512 GB/1 TB", ram: "12/16 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-ultra.jpg" },
+  { id: 41, model: "Redmi Note 11 Pro 5G", name: "Xiaomi Redmi Note 11 Pro 5G", category: "midrange", price: 279, storage: "64/128 GB", ram: "4/6/8 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11-pro-5g-global.jpg" },
+
+  // ——— Oppo ———
+  { id: 44, model: "Find X5 Pro", name: "Oppo Find X5 Pro", category: "premium", price: 999, storage: "256/512 GB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg" },
+
+  // ——— Vivo / iQOO ———
+  { id: 46, model: "Vivo X90 Pro", name: "Vivo X90 Pro", category: "premium", price: 999, storage: "256/512 GB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/vivo-x90-pro.jpg" },
+  { id: 47, model: "Vivo V27", name: "Vivo V27", category: "midrange", price: 399, storage: "128/256 GB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/vivo-v27.jpg" },
+  // ——— Huawei ———
+  { id: 49, model: "P60 Pro", name: "Huawei P60 Pro", category: "premium", price: 999, storage: "256/512 GB", ram: "8/12 GB", imageUrl: "https://fdn2.gsmarena.com/vv/bigpic/huawei-p60-pro.jpg" },
+];
+const phonesContainer = document.getElementById("phones-container")
+function container(array){
+    array.forEach(({id,model,name,category,price,storage,ram,imageUrl})=>{
+  phonesContainer.innerHTML+=`
+  <div class="card" title="${model}" id="${id}" onmouseover="expand(this)" onmouseout="collapse(this)">
+    <img src="${imageUrl}" alt="${name}">
+    <p class="price">${price}$</p>
+ <p class="name">${name}</p>
+  </div>
+  `
+    })
+}
+container(phones);
+function expand(elem){
+    elem.style.width="200px"
+    elem.style.zIndex="9999999";
+    elem.style.position="relative"
+}
+function collapse(elem){
+    elem.style.width=""
+}
+
+
+    </script>
+</body>
+</html>

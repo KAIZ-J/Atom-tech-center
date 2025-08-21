@@ -74,7 +74,7 @@
       <br><br>
       <h2>Shop By category</h2>
       <div class="cards-product">
-        <a href="">
+        <a href="smartphones.html">
           <div class="card">
             <br />
             <img
@@ -216,36 +216,8 @@
 
     <div class="footer">Copyright &copy 2025; Made By Atom Tech Center</div>
 
-   
+   <script src="script.js">
+
+   </script>
   </body>
-   <script>
-      function changeclr() {
-         const imgpr = document.getElementById("pro");
-        const modecolor = document.getElementById("modecolor");
-    const browse = document.getElementById("Browse");
-    const body = document.body;
-    const cards = document.querySelectorAll('.card');
-    const subc = document.getElementById("sub");
-    const fooot = document.querySelector(".footer");
-    if (body.style.backgroundColor === "rgb(242, 246, 248)" || 
-        getComputedStyle(body).backgroundColor === "rgb(242, 246, 248)") {
-        browse.style.backgroundColor = "#286276";
-        subc.style.backgroundColor = "#286276";
-        body.style.backgroundColor = "#070b0d";
-        body.style.color = "#edf1f2";
-        cards.forEach(card => card.style.backgroundColor = '#286276');
-        modecolor.style.color="white";
-        fooot.style.backgroundColor="#286276";
-    }
-    else {
-        subc.style.backgroundColor = "";
-        body.style.backgroundColor = "#f2f6f8";
-        body.style.color = ""; 
-        browse.style.backgroundColor = ""; 
-        cards.forEach(card => card.style.backgroundColor = ''); 
-        modecolor.style.color="";
-        fooot.style.backgroundColor="#286276";
-    }
-}
-    </script>
 </html>

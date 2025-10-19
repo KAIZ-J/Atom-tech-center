@@ -1,223 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TechGear – Fazi's modern e-commerce site for the latest and coolest tech gadgets.">
-
-    <title>Atom Tech Center</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Audiowide|Roboto|Poppins"
-    />
-    <link rel="stylesheet" href="style.css" />
-   <link rel="shortcut icon" href="/assets/Circle_Monogram_Logo_-removebg-preview.png" type="image/png">
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img
-          src="/assets/F086mEe9RcCigX2eYdevgA-removebg-preview.png"
-          alt="logo"
-        />
-      </div>
-      <div id="nav-center">
-        <div class="nav-links">
-          <a href="#hero">Home</a>
-          <a href="#products">Products</a>
-          <a href="#about">About us</a>
-          <a href="#contact">Contact us</a>
-        </div>
-      </div>
-      <div class="search-btn">
-        <button onclick="changeclr()">
-          <i class="fa-solid fa-circle-half-stroke fa-xl" id="modecolor"></i>
-        </button>
-      </div>
-    </nav>
-
-
-    <div class="section hero" id="hero">
-      <br />
-      <div class="note">
-        <br />
-        <h1>
-          <br />
-          <br />
-          <br />
-          <span>Tech </span> You Love.
-          <span>Prices </span> You’ll Love More.
-        </h1>
-        <h5>
-          From phones to gaming gear, we’ve got the best gadgets—no wallet
-          pain.
-        </h5>
-        <p>Start Shopping, <span>Now! </span></p>
-        <a href="#products"><button id="Browse">Browse gadgets</button></a>
-      </div>
-      <div class="hero-pic">
-        <br /><br /><br />
-        <img
-          src="/assets/2fde56aa-4bbc-4a01-a85b-c8bf4242f22e-removebg-preview.png"
-          alt=""
-          id="pro"
-        />
-      </div>
-    </div>
-
-    <div class="section products" id="products">
-      <br><br>
-      <h2>Shop By category</h2>
-      <div class="cards-product">
-        <a href="smartphones.html">
-          <div class="card">
-            <br />
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNzYsMTZIODBBMjQsMjQsMCwwLDAsNTYsNDBWMjE2YTI0LDI0LDAsMCwwLDI0LDI0aDk2YTI0LDI0LDAsMCwwLDI0LTI0VjQwQTI0LDI0LDAsMCwwLDE3NiwxNlpNNzIsNjRIMTg0VjE5Mkg3MlptOC0zMmg5NmE4LDgsMCwwLDEsOCw4djhINzJWNDBBOCw4LDAsMCwxLDgwLDMyWm05NiwxOTJIODBhOCw4LDAsMCwxLTgtOHYtOEgxODR2OEE4LDgsMCwwLDEsMTc2LDIyNFoiPjwvcGF0aD48L3N2Zz4="
-              alt=""
-            />
-            <h4>SmartPhones</h4>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="card">
-            <br />
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMzIsMTY4aC04VjcyYTI0LDI0LDAsMCwwLTI0LTI0SDU2QTI0LDI0LDAsMCwwLDMyLDcydjk2SDI0YTgsOCwwLDAsMC04LDh2MTZhMjQsMjQsMCwwLDAsMjQsMjRIMjE2YTI0LDI0LDAsMCwwLDI0LTI0VjE3NkE4LDgsMCwwLDAsMjMyLDE2OFpNNDgsNzJhOCw4LDAsMCwxLDgtOEgyMDBhOCw4LDAsMCwxLDgsOHY5Nkg0OFpNMjI0LDE5MmE4LDgsMCwwLDEtOCw4SDQwYTgsOCwwLDAsMS04LTh2LThIMjI0Wk0xNTIsODhhOCw4LDAsMCwxLTgsOEgxMTJhOCw4LDAsMCwxLDAtMTZoMzJBOCw4LDAsMCwxLDE1Miw4OFoiPjwvcGF0aD48L3N2Zz4="
-              alt=""
-            />
-            <h4>Laptops</h4>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="card">
-            <br />
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMDEuODksNTQuNjZBMTAzLjQzLDEwMy40MywwLDAsMCwxMjguNzksMjRIMTI4QTEwNCwxMDQsMCwwLDAsMjQsMTI4djU2YTI0LDI0LDAsMCwwLDI0LDI0SDY0YTI0LDI0LDAsMCwwLDI0LTI0VjE0NGEyNCwyNCwwLDAsMC0yNC0yNEg0MC4zNkE4OCw4OCwwLDAsMSwxMjgsNDBoLjY3YTg3LjcxLDg3LjcxLDAsMCwxLDg3LDgwSDE5MmEyNCwyNCwwLDAsMC0yNCwyNHY0MGEyNCwyNCwwLDAsMCwyNCwyNGgxNmEyNCwyNCwwLDAsMCwyNC0yNFYxMjhBMTAzLjQxLDEwMy40MSwwLDAsMCwyMDEuODksNTQuNjZaTTY0LDEzNmE4LDgsMCwwLDEsOCw4djQwYTgsOCwwLDAsMS04LDhINDhhOCw4LDAsMCwxLTgtOFYxMzZabTE1Miw0OGE4LDgsMCwwLDEtOCw4SDE5MmE4LDgsMCwwLDEtOC04VjE0NGE4LDgsMCwwLDEsOC04aDI0WiI+PC9wYXRoPjwvc3ZnPg=="
-              alt=""
-            />
-            <h4>Audio</h4>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="card">
-            <br />
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNzYsMTEySDE1MmE4LDgsMCwwLDEsMC0xNmgyNGE4LDgsMCwwLDEsMCwxNlpNMTA0LDk2SDk2Vjg4YTgsOCwwLDAsMC0xNiwwdjhINzJhOCw4LDAsMCwwLDAsMTZoOHY4YTgsOCwwLDAsMCwxNiwwdi04aDhhOCw4LDAsMCwwLDAtMTZaTTI0MS40OCwyMDAuNjVhMzYsMzYsMCwwLDEtNTQuOTQsNC44MWMtLjEyLS4xMi0uMjQtLjI0LS4zNS0uMzdMMTQ2LjQ4LDE2MGgtMzdMNjkuODEsMjA1LjA5bC0uMzUuMzdBMzYuMDgsMzYuMDgsMCwwLDEsNDQsMjE2LDM2LDM2LDAsMCwxLDguNTYsMTczLjc1YS42OC42OCwwLDAsMSwwLS4xNEwyNC45Myw4OS41MkE1OS44OCw1OS44OCwwLDAsMSw4My44OSw0MEgxNzJhNjAuMDgsNjAuMDgsMCwwLDEsNTksNDkuMjVjMCwuMDYsMCwuMTIsMCwuMThsMTYuMzcsODQuMTdhLjY4LjY4LDAsMCwxLDAsLjE0QTM1Ljc0LDM1Ljc0LDAsMCwxLDI0MS40OCwyMDAuNjVaTTE3MiwxNDRhNDQsNDQsMCwwLDAsMC04OEg4My44OUE0My45LDQzLjksMCwwLDAsNDAuNjgsOTIuMzdsMCwuMTNMMjQuMywxNzYuNTlBMjAsMjAsMCwwLDAsNTgsMTk0LjNsNDEuOTItNDcuNTlhOCw4LDAsMCwxLDYtMi43MVptNTkuNywzMi41OS04Ljc0LTQ1QTYwLDYwLDAsMCwxLDE3MiwxNjBoLTQuMkwxOTgsMTk0LjMxYTIwLjA5LDIwLjA5LDAsMCwwLDE3LjQ2LDUuMzksMjAsMjAsMCwwLDAsMTYuMjMtMjMuMTFaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <h4>Gaming</h4>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="card">
-            <br />
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMDgsMTI4YTc5Ljk0LDc5Ljk0LDAsMCwwLTMyLjctNjQuNDdsLTYuMjQtMzQuMzhBMTYsMTYsMCwwLDAsMTUzLjMyLDE2SDEwMi42OEExNiwxNiwwLDAsMCw4Ni45NCwyOS4xNUw4MC43LDYzLjUzYTc5LjksNzkuOSwwLDAsMCwwLDEyOC45NGw2LjI0LDM0LjM4QTE2LDE2LDAsMCwwLDEwMi42OCwyNDBoNTAuNjRhMTYsMTYsMCwwLDAsMTUuNzQtMTMuMTVsNi4yNC0zNC4zOEE3OS45NCw3OS45NCwwLDAsMCwyMDgsMTI4Wk0xMDIuNjgsMzJoNTAuNjRsMy45MSwyMS41NWE3OS43NSw3OS43NSwwLDAsMC01OC40NiwwWk02NCwxMjhhNjQsNjQsMCwxLDEsNjQsNjRBNjQuMDcsNjQuMDcsMCwwLDEsNjQsMTI4Wm04OS4zMiw5NkgxMDIuNjhsLTMuOTEtMjEuNTVhNzkuNzUsNzkuNzUsMCwwLDAsNTguNDYsMFpNMTIwLDEyOFY4OGE4LDgsMCwwLDEsMTYsMHYzMmgzMmE4LDgsMCwwLDEsMCwxNkgxMjhBOCw4LDAsMCwxLDEyMCwxMjhaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <h4>Wearing</h4>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="card">
-            <br />
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xOTIsMTM2YTgsOCwwLDAsMS04LDhoLTh2OGE4LDgsMCwwLDEtMTYsMHYtOGgtOGE4LDgsMCwwLDEsMC0xNmg4di04YTgsOCwwLDAsMSwxNiwwdjhoOEE4LDgsMCwwLDEsMTkyLDEzNlptLTg4LThINzJhOCw4LDAsMCwwLDAsMTZoMzJhOCw4LDAsMCwwLDAtMTZaTTI0MCw4OHY5NmExNiwxNiwwLDAsMS0xNiwxNkgzMmExNiwxNiwwLDAsMS0xNi0xNlY4OEExNiwxNiwwLDAsMSwzMiw3Mkg0OFY1NkExNiwxNiwwLDAsMSw2NCw0MEg5NmExNiwxNiwwLDAsMSwxNiwxNlY3MmgzMlY1NmExNiwxNiwwLDAsMSwxNi0xNmgzMmExNiwxNiwwLDAsMSwxNiwxNlY3MmgxNkExNiwxNiwwLDAsMSwyNDAsODhaTTE2MCw3MmgzMlY1NkgxNjBaTTY0LDcySDk2VjU2SDY0Wk0yMjQsMTg0Vjg4SDMydjk2SDIyNFoiPjwvcGF0aD48L3N2Zz4="
-              alt=""
-            />
-            <h4>Accessories</h4>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="section about" id="about">
-      <br /><br />
-      <br /><br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h2>About<span style="color: #284f5c;"> Atom Tech Center </span></h2>
-      <hr />
-      <p>
-        At Atom Tech Center, we’re passionate about connecting people with
-        powerful, reliable, and innovative tech. 
-        From phones and gadgets to must-have accessories, we bring the future to
-        your fingertips — fast, affordable, and hassle-free. We believe in more
-        than just selling tech — we help you experience it. Whether you're
-        upgrading your setup, replacing essentials, or gifting smart gear, Atom
-        is your trusted go-to.
-      </p>
-      <p>
-        <span style="color: #284f5c;">Power up with Atom </span>— simple, smart, and always in stock.
-      </p>
-      <hr />
-    </div>
-
-    <div class="section Contacts" id="contact">
-        <br> <br>
-      <h2>Get In Touch</h2>
-      <h5>Questions? Orders? We’re here for you.</h5>
-      <div class="contain-forms">
-        <div>
-          <p>Contact Information</p>
-          <ul>
-            <li>📧support@atomtech.com</li>
-            <br />
-            <li>📞 +252 94 686 84 56</li>
-            <br />
-            <li>📌Online Only!</li>
-          </ul>
-        </div>
-        <div>
-          <p>Send us A message!</p>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="3473a7fa-5dbd-4bfb-afec-387ad59549f8"
-            />
-            <label for="email">Email:</label> <br />
-            <input
-              type="email"
-              id="Name"
-              name="Email"
-              placeholder="John@gmail.com"
-              required
-            /><br /><br />
-            <label for="message">Messsage:</label> <br />
-            <textarea name="message" id="message" rows="1"></textarea> <br />
-
-            <button type="submit" id="sub">Submit</button>
-          </form>
-        </div>
-        <div>
-          <p>Follow us</p>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-pinterest"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">Copyright &copy 2025; Made By Atom Tech Center</div>
-
-   <script src="script.js">
-
-   </script>
-  </body>
-</html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atom Tech Center</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Orbitron:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6B7280", // Muted Gray
+              "background-light": "#F9FAFB", // Softer White
+              "background-dark": "#1F2937",   // Softer Dark Gray
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              headline: ["Orbitron", "sans-serif"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+      .gradient-bg {
+        background-image: linear-gradient(120deg, #F3F4F6 0%, #E5E7EB 50%, #F3F4F6 100%);
+      }
+      .dark .gradient-bg {
+        background-image: linear-gradient(120deg, #1F2937 0%, #374151 50%, #1F2937 100%);
+      }
+      .light .gradient-bg {
+        background-image: linear-gradient(120deg, #F3F4F6 0%, #E5E7EB 50%, #F3F4F6 100%);
+      }
+      @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+      }
+      .animate-scroll {
+        animation: scroll 60s linear infinite;
+      }
+      .carousel::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-700 dark:text-slate-300">
+<div class="flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-background-light/80 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2" href="#">
+<div class="h-8 w-8 text-primary">
+<img src="/assets/F086mEe9RcCigX2eYdevgA-removebg-preview.png" alt="" style="width: 350px;"> 
+</div>
+<h2 class="text-xl font-bold text-slate-800 dark:text-slate-100">Atom Tech Center</h2>
+</a>
+</div>
+<nav class="hidden items-center gap-10 md:flex">
+<a class="text-base font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">New Arrivals</a>
+<a class="text-base font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Best Sellers</a>
+<a class="text-base font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Deals</a>
+<a class="text-base font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Support</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/50 text-slate-500 hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-400 dark:hover:bg-primary/30 dark:hover:text-primary">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/50 text-slate-500 hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-400 dark:hover:bg-primary/30 dark:hover:text-primary">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200/50 text-slate-500 hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-400 dark:hover:bg-primary/30 dark:hover:text-primary">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="gradient-bg py-20 sm:py-28">
+<div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
+<div class="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
+<h1 class="font-headline text-4xl font-bold text-slate-800 dark:text-slate-100 sm:text-5xl md:text-6xl">Tech you love, Prices you will love more</h1>
+<p class="max-w-md text-base text-slate-600 dark:text-slate-300 md:text-lg">From phones to gaming gears we got the best gadgets – no wallet pain.</p>
+<button class="rounded-lg bg-primary px-8 py-3 text-base font-bold text-white shadow-lg shadow-primary/20 transition hover:bg-primary/90">Browse Gadgets</button>
+</div>
+<div class="flex justify-center">
+<img alt="Smartphone" class="w-full max-w-sm" src="/assets/2fde56aa-4bbc-4a01-a85b-c8bf4242f22e-removebg-preview.png"/>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-bold text-slate-800 dark:text-slate-100 sm:text-4xl">Featured Products</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Check out our most popular items.</p>
+</div>
+<div class="relative ">
+<div class="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-hide carousel">
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Gaming Headset" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBexQOlOO0J92gq3dRdU2WlHtZqUHbQnzMeplXTukjbXKnWgsNUNKRh-Yg4Px-WCio_CyqZFm_TqHZqq45_YYJgHs0TCkI_MFvrjcVA7-6Ht9_X3Kql76v5PjzjvnQvKPdTpjJB22SKTSuNC4ewHatBGAD_eVdwt-PoLGmlgOSDxDNpVqk2i5sBSOofa9kmq0K9hw8YqHzuR788Xy3Y4tFGh_px9luuwwiAih4rgaoZ3SPNclgO1E4qn-LG46NvDvnPfCMehRKSsSM"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">Pro Gaming Headset</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Immersive sound</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$79.99</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Smartphone" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMysOumS1T9iEvUPbxxBbUl6ITEVLd34BK_zcAYbLAkZ7QjTnB29hIq9BBqPvOWAjNfI1higOZfXXEHmdrDZO4T_mgWJb4qfXmAi_XjDdNVhh22r34bDHiNS1aJbM8YeJ1YLeRQ9_NMvihw3ibgXWt7t4bpHL72VG66qH1f0ULL6R7OJvm2V0OwIAOl0G5V-uAEJaegRInlfpgny1DUhHRxJ1eDezAH8mlbIglLgxwzOns9YLY7ADBm-qWhxBTSMvvr9nu5RUXnls"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">AtomX Smartphone</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Latest flagship model</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$699.00</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Smartwatch" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTAEpKSs1QHZVSnKDUIJMdhFMKhcmUHKxdePy9PiG5igzjXH8boukCXAP_ZDewV9TH1_xVamtstxzGvRFreJdrmcosU-OaAV05s10W75MzBwRpSforMX0sVdfmLbnEFGHx-zcfhOCwk63fhqZA6lLqiuZrWyplMvMwzpaHfZWzu5bi2Jm1QIFLMPNJnc2GRxBSykdyYzj8yLkXgYNX1AU2q1lFvB32fFOeoD42GN1pfV_3Vjba_WZB8jOcHdZQ94yErEb-Jo6oNrk"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">Connect Smartwatch</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Stay connected</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$199.50</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Wireless Earbuds" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEHoOsXRGvUoXJBTzC9ERqK_T8z5buQHxQ4C8ctDAJO1deSBnHe6nCDHMFUnbE8WhPLzypfuKU4oXFuyrZUWFkCFhtscnlHqSrs6KSVGyXmfWC4OSSs1G8sefHdqwLga72aTh2LTEwiNafANywon92Rv-ec8p-7VedG8vH2lfE28HXYUxxEu7Ko7AR-xRDngZNOZVOJgPceVgJ5ltqUv8mPP0hRe7C1AAWRVcI0CO-N5sJkEb4XKvldqpSR6Cr810LCr_zz0t6prc"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">AirBuds Pro</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Crystal clear audio</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$129.00</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Mechanical Keyboard" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyRhskOfds-u1e_efsgbR3ro3mvLpcqhpBfe62F4CF2vTUY6xBD-MnxXHo36ZPvQQWaiaA2II0UABVU7UnCsoovpYLEF_em0r1aTKpqMlowJRJj8gY-qeTsi-bXH6gVoTYxgPpGepT_2XhYxEaLSzPjuSn5RMFC4OIiTbur2jHP_t3u_rUnITV0u68jcJJkru1NSvGwNqgtgkuOnsKTZKLdI-nWUnLpGzaag8x_-1qcJ4myoLS1_kQUBUzsVLTxQX-AV_YEZYuKl0"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">Mech-Keyboard</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Tactile and responsive</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$99.99</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Portable Projector" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIb8kiGf-viuLuHTyNgvV6dRT2rU_bnNPz9v8ph4BfHnvahghJZjWw5audrbtj2duWi4uhRElD2cRuMVplW5y99ph1vF2isqVu3UHmUh98OFy9OMPJEQDP2EaqvWjxOJksIWK0Gki9-wvfm7nEAvk3psNOXgyQA96u1mWD2XCg3TdmUD1BL10Tk_VFQZyVieleaw_aCDUVzyT15CnQtt86iREwBCfEqIPQ_eis7kA0DJnna44hDcUVv6CFvQE4U5g3fiA2c8Ol57Q"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">Mini Projector</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Theater on the go</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$249.00</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="VR Headset" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8zmYNHmHrF9zfTY3xIAC3vN9sT4dOw2UdTgvVAqWByLKHGbQ4JUTOHuc2vf-j1ErFP0Zdw12TzSpU11E50i2bvXCti_4ejfMNxPiEn3vgRe0MP6X9t9Jc2TC0Ft3YVGg38E3tNddolWboXATVlInqYeSfxp_gdu0xwUgN8KMWaB0DW-2XHdQzeC1NEdNgGGUt9TzvfpqmUmLqMSPfVUou9BhPrR2O2Sq6gCG7gRtbfECBkCiGtmfZ8BURB0rC26L-H3RN4WWbWPo"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">VR Headset</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Immersive virtual reality</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$399.00</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Drone" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHkkT-995hbzemuJDoiqZFg9PsFUGIgLBpzolKt4f6U8zIRLXRbPt6H927KJqWji3SMaIaT-1sggzVR6m-qTsvCkgNpZVJWGANH_sGde5pxEJCdzt7lbQzw2COW0nTLkCEa3nApUFNqx3Q9pRUGrzRR-bo2eWadXsf4pjA7TlGByLBpDvAOqpdSZ7QAydti1MSiDoX7CgThlWE1WeQSc1m9Hqkt4ILYEpBazmod5nqL899DkgCSxLw3drD2lDCOx6DS_FUKE-2V1U"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">Aero Drone</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Capture stunning aerials</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$450.00</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Gaming Mouse" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPLHAyWOvh1XeNEv8KBnQDW1lEFreiKHa4nLZOQFARgsB6SPQmw1XterWi6jb_yTz77bNTTDedaPkNgaDGbFdLyUhU0LH2aO-oCXeEpvYxxeKPQPTh9cjddIIaGDcQ1XWX4cyZGGD9JkRCANAY1ATUEb570hCZJi89i2yvyh4uznXi028Nso74e4uefsXb_chwFnvuctWuPa3z-g9OoJMt-rEjtoi9E4ESddIhuAzGZD1gr7n9BIy5mVWQeoznYQQkkuAszTcSsrE"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">Gaming Mouse</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Precision and speed</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$49.99</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-xs flex-shrink-0 snap-center sm:w-1/3 md:w-1/4 lg:w-1/5">
+<div class="group relative block overflow-hidden rounded-xl border border-slate-200 bg-background-light shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<a href="#">
+<img alt="Laptop" class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwqfkcY-1EjYA-amLL-_Vc6lpSQCf-Czae4Fk-6sOlE1XzOyMEpbqiVITVI5Yj-p2guWYB7_zMcYohIwPtYUSjGNMCeGeC9_9PVtypsuDsZLDdn7IHMm_J-AyFKHwmE_Z6o38X5oeXNOecV2o-9xxRKIJnn8oFzTYPLt93NQdCbqJMw-czcfYflsM2-mALNr8jkvcjjZqGq5987GqlbO-k04gbGK4ovtpeulHDjGOVVVONaPRLJKJS4vlsgfZI6EPKJqbuBio9RdE"/>
+</a>
+<div class="p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
+<a href="#">UltraBook Pro</a>
+</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Power and portability</p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-xl font-bold text-slate-800 dark:text-slate-100">$1299.00</p>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pointer-events-none absolute inset-y-0 left-0 hidden w-1/12 bg-gradient-to-r from-background-light dark:from-background-dark md:block"></div>
+<div class="pointer-events-none absolute inset-y-0 right-0 hidden w-1/12 bg-gradient-to-l from-background-light dark:from-background-dark md:block"></div>
+<button class="absolute -left-4 top-1/2 -translate-y-1/2 rounded-full bg-slate-200/50 p-2 text-slate-600 shadow-md transition hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-primary/30">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="absolute -right-4 top-1/2 -translate-y-1/2 rounded-full bg-slate-200/50 p-2 text-slate-600 shadow-md transition hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-primary/30">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</section>
+<section class="bg-slate-100 dark:bg-slate-900/50 py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-bold text-slate-800 dark:text-slate-100 sm:text-4xl">Why Choose Atom Tech Center?</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-300">We're more than just a store. We're your tech partners.</p>
+</div>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-xl border border-slate-200 bg-background-light p-8 shadow-sm transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-background-dark dark:hover:shadow-slate-700/50">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 21a9 9 0 110-18 9 9 0 010 18z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="mt-6 text-xl font-bold text-slate-800 dark:text-slate-100">Unbeatable Prices</h3>
+<p class="mt-2 text-base text-slate-600 dark:text-slate-300">We believe great tech shouldn't break the bank. We work directly with manufacturers to bring you the best deals.</p>
+</div>
+<div class="rounded-xl border border-slate-200 bg-background-light p-8 shadow-sm transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-background-dark dark:hover:shadow-slate-700/50">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="mt-6 text-xl font-bold text-slate-800 dark:text-slate-100">Quality Assured</h3>
+<p class="mt-2 text-base text-slate-600 dark:text-slate-300">Every product is handpicked and rigorously tested by our team of tech experts to ensure it meets our high standards.</p>
+</div>
+<div class="rounded-xl border border-slate-200 bg-background-light p-8 shadow-sm transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-background-dark dark:hover:shadow-slate-700/50 md:col-span-2 lg:col-span-1">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h3.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="mt-6 text-xl font-bold text-slate-800 dark:text-slate-100">Passionate Support</h3>
+<p class="mt-2 text-base text-slate-600 dark:text-slate-300">Our team lives and breathes tech. We're always here to help you find the perfect gadget and provide lifetime support.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-bold text-slate-800 dark:text-slate-100 sm:text-4xl">What Our Customers Say</h2>
+</div>
+<div class="relative overflow-hidden">
+<div class="flex animate-scroll">
+<div class="flex w-max space-x-8">
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXXdRJ20HSgsvH8KFwg8-ojyqWiubDVTjfwD-K80VBVpIYrZW3elzHx4odUV4bBQcEQgOK-4lFVcj6EHrjgxt96crTjdEv8oumnNHp_ynRkgfVIeJ446yq2fTIoC351U7Zq_ebBC-kp6vjIWzjqVlhCHX8bHkd1AxflSDYjlJPpFqxD_UaPxom2Bwexq7Uym-dc5Zztt2IB0pvyy0DIdyEsIt-JNQ4tz7BbJEVGNYVCjh4ltximC5LOxPlOPxSrMgFVXhMsv0tniE");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Ethan Carter</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">2 months ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"I was blown away by the quality and price of the phone I purchased from Atom Tech Center. It's a fantastic device that performs just as well as the more expensive brands."</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDat-Hk-yZ-ExSypc0lhGxL5JaOat8E_0Y5G48PnQQbv0LHGGv2FHasyxZ8NIyr4PHw1atCslNOgtS90dQ0EexP9SeEUALEA9mQGHCiobcTZ3Fslm2_U4_11WuVe6QpvuxLZPnUduvKzXC08DHMQOqJn2lMKPQHNZfvPPqXq3xj4p5Bv4er-7ecK2XNphRSHWEpH4Er_xiMpT53NWnT6pnZK-pFnJZD6WuHIrmf06xRxBnQes5LRj9V0kuaWbNm91cHANOzErLJvs");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Sophia Chen</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">1 month ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"Amazing selection and unbeatable prices! I bought a gaming laptop from Atom Tech Center, and it's been a game-changer. Highly recommended!"</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWzQ0CE5vp-ReqSrXZ4bmMuZZQkpZEcJZGqKmCjwRnXj3dwbVBHCWEYBQUxixr3T8CswmPHm9NjfcFJsdr87EeDBQajQdhTIYGhgfTLSZPQxr3k17lG8uxKSU0HIPaSqHEByg3R6ORHBzQ-D3kiX7MxkVlZ4DaCvLcM6-0AaBvYW1X5gYjxEeMpjbsZ3iaQCLf-JQ2TaoVAoWL91-trXKJf7Fk1MBTO06GUVsxH3NuPd3bzR2JhGMPbpNU9EpawGiTn3sg1cP_ZUU");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">David Lee</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">3 weeks ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"The customer service was also excellent, making the whole experience a breeze. I'll definitely be recommending them to all my friends!"</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWzQ0CE5vp-ReqSrXZ4bmMuZZQkpZEcJZGqKmCjwRnXj3dwbVBHCWEYBQUxixr3T8CswmPHm9NjfcFJsdr87EeDBQajQdhTIYGhgfTLSZPQxr3k17lG8uxKSU0HIPaSqHEByg3R6ORHBzQ-D3kiX7MxkVlZ4DaCvLcM6-0AaBvYW1X5gYjxEeMpjbsZ3iaQCLf-JQ2TaoVAoWL91-trXKJf7Fk1MBTO06GUVsxH3NuPd3bzR2JhGMPbpNU9EpawGiTn3sg1cP_ZUU");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Jessica Miller</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">1 week ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"Got my smartwatch here, and I'm loving it. The staff was super patient and helped me set it all up. 10/10 would shop again."</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWzQ0CE5vp-ReqSrXZ4bmMuZZQkpZEcJZGqKmCjwRnXj3dwbVBHCWEYBQUxixr3T8CswmPHm9NjfcFJsdr87EeDBQajQdhTIYGhgfTLSZPQxr3k17lG8uxKSU0HIPaSqHEByg3R6ORHBzQ-D3kiX7MxkVlZ4DaCvLcM6-0AaBvYW1X5gYjxEeMpjbsZ3iaQCLf-JQ2TaoVAoWL91-trXKJf7Fk1MBTO06GUVsxH3NuPd3bzR2JhGMPbpNU9EpawGiTn3sg1cP_ZUU");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Michael Brown</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">4 months ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"This place is a hidden gem! The range of gadgets is insane, and the prices are the best I've seen. Found a perfect pair of earbuds."</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex w-max space-x-8">
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXXdRJ20HSgsvH8KFwg8-ojyqWiubDVTjfwD-K80VBVpIYrZW3elzHx4odUV4bBQcEQgOK-4lFVcj6EHrjgxt96crTjdEv8oumnNHp_ynRkgfVIeJ446yq2fTIoC351U7Zq_ebBC-kp6vjIWzjqVlhCHX8bHkd1AxflSDYjlJPpFqxD_UaPxom2Bwexq7Uym-dc5Zztt2IB0pvyy0DIdyEsIt-JNQ4tz7BbJEVGNYVCjh4ltximC5LOxPlOPxSrMgFVXhMsv0tniE");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Ethan Carter</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">2 months ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"I was blown away by the quality and price of the phone I purchased from Atom Tech Center. It's a fantastic device that performs just as well as the more expensive brands."</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDat-Hk-yZ-ExSypc0lhGxL5JaOat8E_0Y5G48PnQQbv0LHGGv2FHasyxZ8NIyr4PHw1atCslNOgtS90dQ0EexP9SeEUALEA9mQGHCiobcTZ3Fslm2_U4_11WuVe6QpvuxLZPnUduvKzXC08DHMQOqJn2lMKPQHNZfvPPqXq3xj4p5Bv4er-7ecK2XNphRSHWEpH4Er_xiMpT53NWnT6pnZK-pFnJZD6WuHIrmf06xRxBnQes5LRj9V0kuaWbNm91cHANOzErLJvs");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Sophia Chen</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">1 month ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"Amazing selection and unbeatable prices! I bought a gaming laptop from Atom Tech Center, and it's been a game-changer. Highly recommended!"</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWzQ0CE5vp-ReqSrXZ4bmMuZZQkpZEcJZGqKmCjwRnXj3dwbVBHCWEYBQUxixr3T8CswmPHm9NjfcFJsdr87EeDBQajQdhTIYGhgfTLSZPQxr3k17lG8uxKSU0HIPaSqHEByg3R6ORHBzQ-D3kiX7MxkVlZ4DaCvLcM6-0AaBvYW1X5gYjxEeMpjbsZ3iaQCLf-JQ2TaoVAoWL91-trXKJf7Fk1MBTO06GUVsxH3NuPd3bzR2JhGMPbpNU9EpawGiTn3sg1cP_ZUU");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">David Lee</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">3 weeks ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"The customer service was also excellent, making the whole experience a breeze. I'll definitely be recommending them to all my friends!"</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWzQ0CE5vp-ReqSrXZ4bmMuZZQkpZEcJZGqKmCjwRnXj3dwbVBHCWEYBQUxixr3T8CswmPHm9NjfcFJsdr87EeDBQajQdhTIYGhgfTLSZPQxr3k17lG8uxKSU0HIPaSqHEByg3R6ORHBzQ-D3kiX7MxkVlZ4DaCvLcM6-0AaBvYW1X5gYjxEeMpjbsZ3iaQCLf-JQ2TaoVAoWL91-trXKJf7Fk1MBTO06GUVsxH3NuPd3bzR2JhGMPbpNU9EpawGiTn3sg1cP_ZUU");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Jessica Miller</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">1 week ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"Got my smartwatch here, and I'm loving it. The staff was super patient and helped me set it all up. 10/10 would shop again."</p>
+</div>
+</div>
+</div>
+<div class="w-[350px] flex-shrink-0 rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWzQ0CE5vp-ReqSrXZ4bmMuZZQkpZEcJZGqKmCjwRnXj3dwbVBHCWEYBQUxixr3T8CswmPHm9NjfcFJsdr87EeDBQajQdhTIYGhgfTLSZPQxr3k17lG8uxKSU0HIPaSqHEByg3R6ORHBzQ-D3kiX7MxkVlZ4DaCvLcM6-0AaBvYW1X5gYjxEeMpjbsZ3iaQCLf-JQ2TaoVAoWL91-trXKJf7Fk1MBTO06GUVsxH3NuPd3bzR2JhGMPbpNU9EpawGiTn3sg1cP_ZUU");'></div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-100">Michael Brown</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">4 months ago</p>
+</div>
+<div class="flex items-center gap-0.5 text-primary"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
+</div>
+<p class="mt-4 text-base text-slate-600 dark:text-slate-300">"This place is a hidden gem! The range of gadgets is insane, and the prices are the best I've seen. Found a perfect pair of earbuds."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section class="py-16 sm:py-24 bg-slate-100 dark:bg-slate-900/50">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-bold text-slate-800 dark:text-slate-100 sm:text-4xl">Contact Us</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Have questions? We'd love to hear from you.</p>
+</div>
+<div class="rounded-xl border border-slate-200 bg-background-light p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark sm:p-8">
+<form class="space-y-6">
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<div>
+<label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="name">Name</label>
+<input class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 sm:text-sm" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="email">Email</label>
+<input class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 sm:text-sm" id="email" name="email" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="message">Message</label>
+<textarea class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 sm:text-sm" id="message" name="message" rows="4"></textarea>
+</div>
+<div class="text-right">
+<button class="rounded-lg bg-primary px-6 py-2.5 text-base font-bold text-white shadow-lg shadow-primary/20 transition hover:bg-primary/90" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-slate-200 bg-slate-100 dark:border-slate-800 dark:bg-slate-900/50">
+<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center gap-8">
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">About Us</a>
+<a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Contact</a>
+<a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Terms of Service</a>
+</div>
+<div class="flex justify-center space-x-6">
+<a class="text-slate-400 hover:text-primary dark:text-slate-500 dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</a>
+<a class="text-slate-400 hover:text-primary dark:text-slate-500 dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</a>
+<a class="text-slate-400 hover:text-primary dark:text-slate-500 dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+</div>
+<p class="text-center text-sm text-slate-500 dark:text-slate-400">© 2024 Atom Tech Center. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
